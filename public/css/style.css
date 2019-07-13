@@ -1,0 +1,334 @@
+#status{
+    background: url(../images/icons/preloader.gif)
+}
+#logo-1 img{
+    height: 100px;
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.noi-dung-bai-viet img{
+    height: auto !important;
+}
+.stuck .logo img {
+    width: 40%;
+    height: 60px !important;
+}
+.topbar {
+    color: #fff;
+    background: #214659;
+}
+.mainmenu li a:hover {
+    color: #214659;
+}
+.mainmenu-item>.menulevel li a:hover, .mainmenu-item>.menulevel li h3:hover {
+    color: #fff;
+    background-color: #214659;
+}
+.rev_slider_wrapper{
+    height: 700px !important;
+}
+div#rev-slider-1 {
+    height: 700px !important;
+}
+.rev_slider .tp-rightarrow.tparrows, .rev_slider .tparrows.tp-leftarrow{
+    background: #214659;
+}
+.rev_slider .tp-rightarrow.tparrows:before, .rev_slider .tparrows.tp-leftarrow:before {
+    color: #fff;
+}
+.service-content {
+    background: #214659;
+}
+.service img{
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+}
+.service-content .des {
+    color: #e4e4e4;
+    overflow: hidden;
+    height: 42px;
+}
+.service-content .title a {
+    display: block;
+    overflow: hidden;
+    height: 25px;
+}
+.cta {
+    background: #214659;
+}
+.banner, .overlay--blue {
+    background: rgba(33, 70, 89, 0.67);
+}
+.section-title-color-grey {
+    color: #214659;
+}
+.section-title-underline-1:after {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: inline-block;
+    content: '';
+    height: 3px;
+    width: 80px;
+    background: #214659;
+    text-align: center;
+}
+.project-1 {
+    position: relative;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.project-caption-name a{
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000;
+    overflow: hidden;
+    height: 50px;
+}
+.project-caption-name a:hover {
+    color: #01aac1;
+}
+.project-caption p.meta{
+    text-align: left;
+    color: #fb3131;
+    font-size: 13px;
+    margin: 5px 0;
+}
+.project-caption-description{
+    text-align: left;
+    line-height: 25px;
+    color: #888;
+    overflow: hidden;
+    height: 100px;
+}
+.project .project-img img{
+    height: 250px;
+}
+footer.footer-style-1 {
+    color: #c5c5c5;
+    background: #214659;
+}
+.copyright {
+    background: #1a3d4e;
+    margin-top: 0;
+    color: #c5c5c5;
+    text-align: inherit !important;
+}
+.theheadings h1, .theheadings h2, .theheadings h3, .theheadings h4, .theheadings h5, .theheadings h6, .theheadings p {
+    font-size: 12px;
+    padding: 0;
+    display: inline;
+    color: #c5c5c5;
+    margin: 0 10px 0 0;
+    font-weight: inherit;
+    line-height: 1.57;
+}
+.extralinks .extralinks-col a {
+    line-height: 2.14;
+    display: block;
+    color: #c5c5c5;
+}
+.xem-them{
+    text-align: left;
+    margin-top: 15px;
+}
+.xem-them a{
+    line-height: 25px;
+    background: #214659;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.xem-them a:hover{
+    background: #01aac1;
+}
+@media (max-width: 1224px){
+    .logo img {
+        width: 40%;
+        height: 60px !important;
+    }
+    section.projects .col-md-4{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 479px){
+    .tes-content:before {
+        font-size: 60px;
+        left: -20px;
+    }
+    .tes-content {
+        font-size: 16px;
+    }
+}
+/*main-content-page*/
+.main-content-page{
+    margin-bottom: 30px;
+}
+.section.pagetitle-wrapper {
+    background-image: url(../images/demo/bg-page.png);
+    background-position: center;
+}
+.blue-grey-bg {
+    background: #ffffff;
+}
+.breadcrumb {
+    margin-bottom: 0;
+}
+.main-content-page-body h1{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+.noi-dung-bai-viet p, .noi-dung-bai-viet span, .noi-dung-bai-viet strong, .noi-dung-bai-viet a, .noi-dung-bai-viet li{
+    line-height: 1.79;
+}
+.noi-dung-bai-viet ul{
+    margin-left: 10px;
+}
+.noi-dung-bai-viet ul li{
+    list-style: initial;
+}
+.list-bai-viet-lien-quan{
+    margin-bottom: 20px;
+}
+.bai-viet-lien-quan-title{
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 25px;
+}
+.list-bai-viet-lien-quan-name a{
+    display: block;
+    line-height: 25px;
+    font-weight: 600;
+    color: #214659;
+}
+.list-bai-viet-lien-quan-name a:hover{
+    color: #01aac1;
+}
+.list-bai-viet-lien-quan p.meta{
+    text-align: left;
+    color: #fb3131;
+    font-size: 13px;
+    margin: 5px 0;
+}
+.list-item-img img{
+    width: 100%;
+    height: 169px !important;
+    object-fit: cover;
+}
+.list-item-name{
+    margin-bottom: 7px;
+}
+.list-item-name a{
+    font-weight: bold;
+    font-size: 16px;
+    color: #214659;
+}
+.list-item-name a:hover {
+    color: #01aac1;
+}
+.list-item-description{
+    overflow: hidden;
+    height: 75px;
+}
+a.rm:hover {
+    color: #fb3131;
+}
+.list-item{
+    margin-bottom: 30px;
+}
+.pagination {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #01aac1;
+    border-color: #01aac1;
+}
+.noi-dung-bai-viet-mo-ta{
+    border-bottom: 1px dotted #e0e0e0;
+    margin-bottom: 15px;
+}
+.noi-dung-bai-viet-mo-ta p{
+    font-style: italic;
+}
+/*main-content-page*/
+/*sidebar*/
+.box-sidebar{
+    margin-bottom: 25px;
+}
+.box-sidebar:last-child{
+    margin-bottom: 0;
+}
+.box-sidebar-body ul li a{
+    line-height: 25px;
+    display: block;
+    padding: 6px 15px;
+    border-bottom: 1px solid #ccc;
+}
+.box-sidebar-title{
+    background: #214659;
+    padding: 15px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.box-sidebar-body{
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+.sidebar-list-post{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.no-pad-left{
+    padding-left: 0;
+}
+.list-post{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.list-post:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.list-post-name a{
+    display: block;
+    line-height: 22px;
+}
+/*sidebar*/
+@media (max-width: 479px){
+    .no-pad-left{
+        padding-left: 15px !important;
+    }
+    .list-item-img img {
+        height: 216px !important;
+    }
+}
