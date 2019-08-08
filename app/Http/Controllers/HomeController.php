@@ -9,8 +9,8 @@ use TCG\Voyager\Models\Category;
 
 class HomeController extends Controller
 {
-    private $service_category_id = 3;
-    private $post_category_id = 4   ;
+    private $service_category_id = 11;
+    private $post_category_id = 4;
 
 
     public function index(){
