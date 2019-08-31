@@ -2,26 +2,30 @@
 @section('slider')
     <div class="owl-carousel owl-theme">
         @foreach($slides as $slide)
-            <div class="item"><img src="/storage/{{ $slide->image }}" alt="{{ $slide->name }}" /></div>
+            <div class="item"><img src="http://duongdangbridal.com/storage/{{ $slide->image }}" alt="{{ $slide->name }}" /></div>
         @endforeach
     </div>
 @endsection
 @section('content')
     <div class="section services white-bg">
         <div class="container">
-            <div class="section-title section-title-underline-1 section-title-style-1 section-title-color-grey section-title-center marbt-1">Dịch vụ của chúng tôi</div>
+            <div class="section-title section-title-underline-1 section-title-style-1 section-title-color-grey section-title-center marbt-1">Chúng tôi cung cấp các dịch vụ</div>
             <div class="row row-flex">
-                @foreach($services as $service)
+                @foreach($goi_chups as $item)
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="service">
-                            <a class="service-img" href="">
-                                <img src="/storage/{{ $service->image }}" alt="{{ $service->name }}">
+                            <a class="service-img" href="{{ route('goichup', $item->slug) }}">
+                                <img src="/storage/{{ $item->featured_image }}" alt="{{ $item->ten }}">
                             </a>
                             <div class="service-content">
                                 <div class="title">
-                                    <a href="">{{ $service->name }}</a>
+                                    @if(is_numeric($item->gia_tien))
+                                        <a href="{{ route('goichup', $item->slug) }}">{{ $item->ten }} - {{ number_format($item->gia_tien) }}<sup>đ</sup></a>
+                                    @else
+                                        <a href="{{ route('goichup', $item->slug) }}">{{ $item->ten }}</a>
+                                    @endif
                                 </div>
-                                <p class="des">{{ $service->desc }}</p>
+                                <div class="des">{!! $item->mo_ta !!}</div>
                             </div>
                         </div>
                     </div>
@@ -62,22 +66,26 @@
                 @foreach($posts as $post)
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="project project-1">
-                            <a class="project-img" href="">
+                            <a class="project-img" href="{{ route('tintuc.show', $post->slug) }}">
+                                @if($post->image)
                                 <img src="/storage/{{ $post->image }}" alt="{{ $post->title }}">
+                                    @else
+                                    <img src="http://via.placeholder.com/370x250" alt="{{ $post->title }}">
+                                    @endif
                             </a>
                             <div class="project-info">
-                                <a class="aubtn rmbtn" href="">Xem chi tiết</a>
+                                <a class="aubtn rmbtn" href="{{ route('tintuc.show', $post->slug) }}">Xem chi tiết</a>
                             </div>
                         </div>
                         <div class="project-caption">
                             <div class="project-caption-name">
-                                <a href="">{{ $post->title }}</a>
+                                <a href="{{ route('tintuc.show', $post->slug) }}">{{ $post->title }}</a>
                             </div>
                             <p class="meta"><i class="fa fa-calendar"></i> {{ $post->created_at->format('d/m/Y') }}</p>
                             <div class="project-caption-description">{{ $post->excerpt }}</div>
                         </div>
                         <div class="xem-them">
-                            <a href="">Xem chi tiết</a>
+                            <a href="{{ route('tintuc.show', $post->slug) }}">Xem chi tiết</a>
                         </div>
                     </div>
                 @endforeach
@@ -94,6 +102,7 @@
             items: 1,
             autoplay:true,
             autoplayTimeout:3000,
+            autoHeight:true
         })
     </script>
 @endpush

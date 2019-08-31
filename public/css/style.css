@@ -42,14 +42,14 @@ div#rev-slider-1 {
     background: #214659;
 }
 .service img{
-    height: 160px;
+    height: 250px;
     width: 100%;
     object-fit: cover;
 }
 .service-content .des {
     color: #e4e4e4;
     overflow: hidden;
-    height: 42px;
+    height: 114px;
 }
 .service-content .title a {
     display: block;
@@ -115,6 +115,7 @@ div#rev-slider-1 {
 footer.footer-style-1 {
     color: #c5c5c5;
     background: #214659;
+    padding-bottom: 20px;
 }
 .copyright {
     background: #1a3d4e;
@@ -173,7 +174,7 @@ footer.footer-style-1 {
     margin-bottom: 30px;
 }
 .section.pagetitle-wrapper {
-    background-image: url(../images/demo/bg-page.png);
+    background-image: url(/images/bg-page.png);
     background-position: center;
 }
 .blue-grey-bg {
@@ -331,4 +332,24 @@ a.rm:hover {
     .list-item-img img {
         height: 216px !important;
     }
+}
+
+.chi-tiet {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.gia {
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 15px;
+}
+.owl-carousel .owl-wrapper {
+    display: flex !important;
+}
+.owl-carousel .owl-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: initial;
 }

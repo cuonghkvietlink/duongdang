@@ -13,6 +13,12 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::get('/gop-chup/{slug}', 'GoiChupController@show')->name('goichup');
+
+Route::get('/tin-tuc', 'TinTucController@cat')->name('tintuc');
+
+Route::get('/tin-tuc/{slug}', 'TinTucController@show')->name('tintuc.show');
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\GoiChup;
 use App\Slide;
 use App\Testimonial;
 use Illuminate\Http\Request;
@@ -17,7 +18,6 @@ class HomeController extends Controller
         $slides = Slide::orderBy('piority','ASC')->get();
 
         // dich vu
-        $services = Category::where('parent_id', $this->service_category_id)->orderBy('order','ASC')->get();
 
         // Testimonials
         $testimonials = Testimonial::orderBy('pioriry')->get();
@@ -25,6 +25,9 @@ class HomeController extends Controller
         // Posts
         $posts = !empty(Category::find($this->post_category_id)->posts) ? Category::find($this->post_category_id)->posts : collect();
 
-        return view('frontend.home', compact('slides','services','testimonials', 'posts'));
+        // Goi chup
+        $goi_chups = GoiChup::latest()->get();
+
+        return view('frontend.home', compact('slides','testimonials', 'posts','goi_chups'));
     }
 }

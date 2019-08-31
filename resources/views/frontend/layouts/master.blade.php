@@ -56,7 +56,7 @@
             <div class="container newclearfix">
                 <div class="logo" id="logo-1">
                     <a href="/">
-                        <img src="/storage/{{ setting('site.logo') }}" alt="Logo">
+                        <img src="http://duongdangbridal.com/storage/{{ setting('site.logo') }}" alt="Logo">
                     </a>
                 </div>
                 <!-- NAVIGATION-->
